@@ -33,17 +33,7 @@ const correctAnswers = `<div class="callout callout-error callout-hidden" id="ms
           // add this question and its answers to the output
           output.push(
             `<div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join('')} </div>
-            <div
-            class="callout callout-success callout-hidden"
-            id="msg-success"
-        >
-            <span class="text-dark"
-                ><strong>Correct!</strong> Je vraag is
-                verzonden en zal binnenkort beantwoord
-                worden.</span
-            >
-        </div>`
+            <div class="answers"> ${answers.join('')} </div>`
           );
         }
       );
