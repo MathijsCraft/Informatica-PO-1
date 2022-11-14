@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="h-100" lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+
+        <title>Embedded Systems</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div id="overlay"></div>
+
+        <div data-include="header"></div>
+        <button
+            type="button"
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0 bg-dark"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language"
+            href="#"
+            target="_self"
+        ></a>
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language-2"
+            href="#"
+            target="_self"
+        ></a>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="px-4 pt-5 mt-5 text-center text-light border-bottom"
+                    >
+                        <h1 class="display-4 fw-bold">
+                            Betrouwbaarheid
+                        </h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">
+                                De betrouwbaarheid van ingebedde systemen is lastig om te verzekeren. Omdat onze technologieën steeds kleiner worden is de kans op een storing veel groter. Dit kan lijden tot bijvoorbeeld kortsluiting met catastrofale uitkomsten. Wat zijn dan dus de gevolgen van zo'n onverwachte storing in een systeem? Is dat het vastlopen van uw laptop of een vliegtuig die neerstort. Betrouwbaarheid kunnen we hierdoor dus een definitie geven, het is de kans dat een systeem helemaal werkt zoals het zou moeten werken over een bepaalde tijd terwijl er storingen aanwezig zijn. De systemen in een vliegtuig of in het leger moeten dus betrouwbaarder zijn dan bijvoorbeeld uw laptop. Als een defensie systeem niet betrouwbaar genoeg is kan het zo maar zijn dat er terroristen binnen komen of dat ons land word gehackt. Dit is veel belangrijker dan uw laptop die een storing heeft waardoor u uw les niet kunt voorbereiden.  
+                              </p>
+                            <div
+                                class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    vorige pagina
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    volgende pagina
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 mb-5 text-center text-light border-bottom">
+                        <nav class="nav justify-content-center">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        aria-current="page"
+                                        href="#kopje1"
+                                        > Gevaren
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje2"
+                                        > Verschillende functies </a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje3"
+                                        > Ontwikkeling</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje4"
+                                        > Toekomst</a
+    
+                              ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row text-light">
+                    <div class="col-md-10">
+                        <a id="kopje1"></a>
+                        <h2>Gevaren</h2>
+                        <p>De volgende mogelijk gevaarlijke en belangrijke storingen van ingebedde systemen zijn mogelijk als de betrouwbaarheid niet goed genoeg is. Een mobiele telefoon die niet werkt wanneer de eigenaar dringend medische hulp nodig heeft. Of een Cv-Ketel die oververhit raakt en er uiteindelijk voor zorgt dat een kind brandwonden oploopt. Of een thermostaat die vergeet om de verwarming aan te zetten waardoor de leidingen bevriezen en barsten. Of een magnetron die aangaat terwijl de deur nog open is. Tegenwoordig zijn er veel hardware vergrendelingen om deze gevaren te voorkomen. Maar software speel hier een grotere rol in om kritieke storingen te beperken. Omdat heel veel ingebedde systemen de omgeving beïnvloeden moet er op gelet worden dat ze veilig en betrouwbaar zijn. De veiligheid bij ingebedde systemen word gegarandeerd door de frequentie van ongelukken te verminderen. Dit word gedaan door het waarborgen van verschillende industrie specifieke normen speciaal ontwikkeld om de veiligheid te waarborgen. Een voorbeeld hiervan is IEC 61508. 
+                              </p>
+                        <a id="kopje2"></a>
+                        <h2>Betrouwbaarheid bij verschillende funcies</h2><h2></h2>
+                          
+
+                          <p>
+
+                          </p>  Er word al meerdere jaren onderzoek gedaan naar betrouwbaarheid in ingebedde systemen. Systemen die echt hoge betrouwbaarheid nodig hebben maken gebruik van een redundant systeem, bijvoorbeeld een vliegtuig met meerdere motoren. Maar alledaags systemen hebben niet het budget om deze hardware redundantie mogelijk te maken. Een veel groter probleem, betrouwbare software. Vooral nu wanneer een product zo snel mogelijk ontwikkeld moet worden word het budget kleiner en kleiner. Beveiliging is ook een belangrijk onderwerp, maar er is helaas minder aandacht voor beveiliging in ingebedde systemen dan in bedrijfssystemen. Ingebedde systemen hebben natuurlijk niet evenveel veiligheidsproblemen als bedrijfssystemen, maar is de kans op aanzienlijke gevolgen wel aanwezig. Bijvoorbeeld als een kwaadwillend persoon controle krijgt over ingebedde systemen die gevaarlijke stoffen in het milieu kunnen dumpen. Of die energiedistributie, verkeersregeling of andere belangrijke infrastructuur beheren.   <Br> 
+                        <Br>
+
+                        </p>
+                        <a id="kopje3"></a>
+                        <h2>Ontwikkeling</h2>
+                        <p>
+                            Ingebedde systemen waren vroeger eenvoudig, veilig, beveiligd en betrouwbaar, tegenwoordig worden ze veel complexer en ook kritiek, wat vroeger niet zo was. Helaas zijn de technieken niet echt veranderd voor nieuwe kritieke toepassingen en word er daarom minder rekening mee gehouden dat er gelet moet worden op betrouwbaarheid, veiligheid en beveiliging. Het verduidelijken en verbeteren van de kennis van ontwikkelaars op deze gebieden zal helpen om deze gebieden beter te maken. Maar zelfs dan blijven er uitdagingen bestaan. Een van deze uitdagingen heeft te maken met de rol van domeindeskundigen in het ontwerp van ingebedde systemen.  
+                        </p>
+                        <a id="kopje4"></a>
+                        <h2>Toekomst</h2>
+                        <p>  Over het algemeen zijn ontwikkelingsteams voor ingebedde systemen klein en ze bestaan uit vooral domeindeskundigen en weinig tot na genoeg geen computerdeskundigen.  Want domeinkennis is erg belangrijk voor succes van de ingebedde systemen. Hier zit een nadeel aan, kleine teams en/of bedrijven die vooral domeindeskundigen als personeel inhuren hebben vaak geen toegang tot de computertechnologie of expertise op het gebied van betrouwbaarheid. Dus al kunnen we al de problemen oplossen is er nog steeds het probleem, hoe brengen we deze kennis over naar ingenieurs wiens opleiding niks te maken heeft met informatica. We moeten dus niet alleen de problemen oplossen maar ook deze kennis verspreiden.  </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div data-include="footer"></div>
+    </body>
+    <!-- JQuary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Framework -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Include Date Include -->
+    <script src="../js/include.js"></script>
+    <!-- Font Awesome Icons -->
+    <script
+        src="https://kit.fontawesome.com/3f96ab750b.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Form Validation -->
+    <script src="../js/validate.js"></script>
+    <!-- Back to Top Button -->
+    <script src="../js/backtotop.js"></script>
+    <!-- Language Switcher -->
+    <script src="../js/language.js"></script>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="h-100" lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+
+        <title>Embedded Systems</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div id="overlay"></div>
+
+        <div data-include="header"></div>
+        <button
+            type="button"
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0 bg-dark"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language"
+            href="#"
+            target="_self"
+        ></a>
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language-2"
+            href="#"
+            target="_self"
+        ></a>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="px-4 pt-5 mt-5 text-center text-light border-bottom"
+                    >
+                        <h1 class="display-4 fw-bold">
+                            Geschiedenis en Toekomst
+                        </h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">
+                                De fundering van ingebedde systemen en ingebedde
+                                ontwikkeling is nog steeds grotendeels gelijk
+                                aan toen het allemaal begon, eind de jaren 90.
+                                Toen moesten ingenieurs nog schakelaars
+                                gebruiken bij hun betraden microcomputers om hun
+                                code te laten draaien. Het algemene idee achter
+                                ingebedde systemen is grotendeels gelijk
+                                gebleven, we houden nog steeds externe
+                                gebeurtenissen in de gaten en reageren hierop.
+                                Hoe we dit doen blijf veranderen.
+                            </p>
+                            <div
+                                class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    Ga naar vorige pagina
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    Ga naar volgende pagina
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 mb-5 text-center text-light border-bottom">
+                        <nav class="nav justify-content-center">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        aria-current="page"
+                                        href="#kopje1"
+                                        >1. Enquêtes
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje2"
+                                        >2. Eigenschappen en werking van Embedded Systemen  </a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje3"
+                                        >3. Kopje 3</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">4. Kopje 4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">5. Kopje 5</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row text-light">
+                    <div class="col-md-10">
+                        <a id="kopje1"></a>
+                        <h2>Enquêtes</h2>
+                        <p>
+                            De vragen vanuit de enquêtes laten al een deel van die verandering zien, de enquête uit 1999 bevatte grotendeels vragen over cross compilers (Een cross-compiler zorgt ervoor dat jouw code werkt op verschillende platformen/besturingssystemen, denk aan MacOS, Windows, Android, IOS), en ze maakten gebruik van bestaande onderdelen uit het elektrisch circuit maar relatief weinig over besturingssystemen. Daarentegen in 2009 waren er minder specifieke secties en ging het over multiprocessorontwerp, besturingssystemen en specifiek ingebedde Linux (Het specifiek gebruik van Linux in ingebedde systemen) maar dingen zoals Internet of Things (IoT) en kunstmatige intelligentie (AI) waren nog niet aan de orde. In 2019 was er wel een grote belangstelling naar deze onderwerpen, waaronder ook beveiliging. En werd dit ook actief gebruikt overal op de wereld. 
+
+ 
+
+Het vergelijken van de details van deze enquêtes is moeilijk, de methodes gebruikt in de enquête uit 2009 waren heel erg veranderd ten opzichte van de enquête uit 1999. In sommige gevallen ging dit van een algemene open vraag naar een meerkeuzevraag met meerdere toegestane antwoorden. Dit maakt de interpretatie van deze vragen en antwoorden onzeker. Dit is te zien bij de bespreking van ontwerpmogelijkheden. Sommige van de resultaten missen de gegevens uit de enquête van 1999 zodat u alleen 2009 en 2019 ziet. Het foutmarge varieert van ongeveer 3% tot meer dan 6%, dus het is riskant om gedetailleerde vergelijkingen te maken.  
+                        </p>
+                        <a id="kopje2"></a>
+                        <h2>Eigenschappen en werking van Embedded Systemen  </h2>
+                        <p>
+                          
+
+                            Een ingebed systeem is een stuk hardware met software geïnstalleerd dat verschillende doeleinden kan hebben. Een ingebed systeem word vaak gebruikt als een controller van sommige functies in een groot systeem, een voorbeeld hiervan is bijvoorbeeld onze infrastructuur. Ingebedde systemen bestaan uit verschillende onderdelen en hebben altijd een geheugen en minstens één manier om data te ontvangen. De ingebedde systemen kunnen dingen meten, ze kunnen rekenen, signalen afgeven en nog veel meer. Er word heel vaak ook gebruik gemaakt van AI om het systeem te leren hoe het moet reageren op bepaalde data. Ingebedde systemen komen voor in vele systemen, ze zorgen dat de systemen intelligent gedrag kunnen vertonen, meer hierover kunt u lezen op de pagina 'Het gebruik van Embedded systemen'  
+                            
+                              
+                            
+                            Je kan hardware en software vergelijken met bijvoorbeeld het menselijk lichaam, je kan het als volgt zien, de hardware is eigenlijk het lichaam en alle organen, alle fysieke elementen die ervoor zorgen dat een systeem werkt. De software kan je ook wel zien als het brein, zonder de software heb je niks aan de hardware en andersom geld hetzelfde. De software is wat een apparaat intelligent maakt, programmeurs werken hier al jaren aan om onze apparaten zo slim mogelijk te maken. Maar dat is nog niet alles, onder software valt bijvoorbeeld ook de programma's op uw computer die verschillende taken uitvoeren en dus verschillende doeleinden hebben. De date die hiervoor nodig is behoort ook tot de sectie software.  
+                            
+                              
+                            
+                            Het samenvoegen van deze twee elementen resulteert in een ingebed systeem, zonder deze 2 elementen zouden we nooit de systemen kunnen maken die we nu hebben, elk jaar bedenken we steeds innovatievere oplossingen voor alledaagse problemen met behulp van ingebedde systemen.  En doordat we gebruik maken van een combinatie van elementen is het mogelijk om specifieke functies binnenin een apparaat aan te passen en/of te toevoegen.  
+                       <Br> 
+                        <Br>
+
+                        Embedded Systemen 101 
+                        <Br>
+
+Een ingebed systeem begint allemaal met hardware en software, maar wat houd dat nou precies in? Wat valt er onder hardware, en wat voor soort hardware hebben we het dan over? Uiteindelijk draait het erom dat de hardware de software voorziet van heel veel data, de software heeft deze data nodig om berekeningen te maken en daarmee dingen te voorspellen, controleren of vergelijken. We kunnen deze data verkrijgen door bijvoorbeeld een sensor te plaatsen. Een sensor verricht een meting en stuurt deze data door naar de software, dit word gedaan doormiddel van een signaal, vaak is dit een elektrisch signaal over bijvoorbeeld het moederbord van het systeem, het moederbord is een PCB (Printed Circuit Board) en heeft een heel circuit aan paden voor het versturen van signalen. Deze signalen kunnen worden opgevangen en daarna verwerkt door een computer of een speciaal ontwikkelde ontvanger. Nu we de meting van de sensor hebben omgezet in een elektrisch signaal, het signaal hebben verwerkt en de resultaten hebben weergegeven gaat het door het laatste stukje heen, een interface, een interface zet het elektrisch signaal om in binaire code. Computers maken gebruik van binaire code en dit bestaat uit series van enen en nullen. Als dit is gedaan gaat de software aan de slag. De software is zo gemaakt om deze code om te zetten in data die de gebruiker begrijpt. Een set van miljoenen enen en nullen is namelijk erg lastig om te begrijpen voor de gebruiker. Het systeem kan nu de data grafisch weergeven in bijvoorbeeld een grafiek of dergelijke. De data word vervolgens verbonden aan andere datalijnen, het vergelijken van data en het analyseren van data is dan mogelijk. De uitkomst hiervan varieert per situatie.  
+                     </p>
+                        <a id="kopje3"></a>
+                        <h2>Kopje 3</h2>
+                        <p>
+         
+                </div>
+            </div>
+        </main>
+        <div data-include="footer"></div>
+    </body>
+    <!-- JQuary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Framework -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Include Date Include -->
+    <script src="../js/include.js"></script>
+    <!-- Font Awesome Icons -->
+    <script
+        src="https://kit.fontawesome.com/3f96ab750b.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Form Validation -->
+    <script src="../js/validate.js"></script>
+    <!-- Back to Top Button -->
+    <script src="../js/backtotop.js"></script>
+    <!-- Language Switcher -->
+    <script src="../js/language.js"></script>
+</html>

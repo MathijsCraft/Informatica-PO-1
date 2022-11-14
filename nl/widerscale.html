@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="h-100" lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+
+        <title>Embedded Systems</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div id="overlay"></div>
+
+        <div data-include="header"></div>
+        <button
+            type="button"
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0 bg-dark"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language"
+            href="#"
+            target="_self"
+        ></a>
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language-2"
+            href="#"
+            target="_self"
+        ></a>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="px-4 pt-5 mt-5 text-center text-light border-bottom"
+                    >
+                        <h1 class="display-4 fw-bold">
+                           Grote schaal
+                        </h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">
+                               Embedded systems hebben een wereld van verschil aangebracht op het gebied van de medische wereld, de militaire wereld en de politie.</p>
+                            <div
+                                class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    vorige pagina
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    volgende pagina
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 mb-5 text-center text-light border-bottom">
+                        <nav class="nav justify-content-center">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        aria-current="page"
+                                        href="#kopje1"
+                                        > Medische wereld
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje2"
+                                        > Militaire wereld </a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje3"
+                                        > Politie</a
+                                    >
+                                </li>
+                               
+    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row text-light">
+                    <div class="col-md-10">
+                        <a id="kopje1"></a>
+                        <h2>Medische wereld</h2>
+                        <p>Medische Informatietechnologie (Embedded systemen binnen de medische sector) word steeds vaker gebruikt in de zorginstellingen.  Veilig gebruik en implementatie van deze technologie vereist maatregelen, maatregelen om te zorgen dat de risico's zo klein mogelijk zijn. Alleen zo kunnen we duurzaamheid, betrouwbaarheid en patiëntveiligheid garanderen. 
+
+                            Dit roept een heleboel praktische problemen op. In dit artikel gaan we hier uitgebreid op in, aan de hand van voorbeelden en uitleg. Wij behandelen niet alleen softwaretoepassingen in verband met medische informatietechnologie, maar ook ingebedde software op medische apparatuur en medische systemen, en ook de bijbehorende netwerkinfrastructuur en hardware. 
+                            
+                               </p>
+                               <Br>
+                                Wanneer word medische informatietechnologie gezien als een medisch hulpmiddel? <br>
+                                Om als medisch hulpmiddel vastgesteld te worden moet medische informatietechnologie voldoen aan verschillende eisen uit de wet op medische hulpmiddelen. 
+
+De definitie van een medisch hulpmiddel is als volgt. 
+
+‘Elk instrument, toestel of apparaat, elke software of stof of elk ander artikel dat of die alleen of in combinatie wordt gebruikt, met inbegrip van de software die door de fabrikant speciaal is bestemd om te worden gebruikt voor diagnostische en/of therapeutische doeleinden en voor de goede werking ervan benodigd is, door de fabrikant bestemd om bij de mens te worden aangewend voor: <br>
+<br>
+Diagnose, preventie, bewaking, behandeling of verlichting van ziekten; 
+
+Diagnose, bewaking, behandeling, verlichting of compensatie van verwondingen of een handicap; 
+
+Onderzoek naar of vervanging of wijziging van de anatomie of van een fysiologisch proces; 
+
+Beheersing van de bevruchting, waarbij de belangrijkste beoogde werking in of aan het menselijk lichaam niet met farmacologische of immunologische middelen of door metabolisme wordt bereikt, maar wel door dergelijke middelen kan worden ondersteund.’ (Bron: Medical Device Directive (MDD), Medical Device Regulation (MDR))  
+
+Dit vertelt ons dat zolang medische informatietechnologie is bedoeld voor patiëntenzorg en/of onderzoek naar ziekten en handicaps mag je dit een medisch hulpmiddel noemen. 
+
+ 
+
+Embedded systemen worden veel gebruikt in de Medische wereld, er zijn hele bedrijven die zichzelf speciaal richten op het ontwerpen en maken van Embedded Systemen voor de medische wereld. Hiervoor zijn enorm veel wetten en regelgevingen waar ontwerpers rekening mee moeten houden en daarom duurt dit ook vaak erg lang. Hieronder ziet u een figuur waarin duidelijk word hoe het ontwikkelen van Medische Informatiekunde in zijn werk gaat.  Sommige van deze procedures zijn cruciaal tijdens het de hele duur van het bestaan van het systeem. Bijvoorbeeld risicomanagement, taken, bevoegdheden en verantwoordelijkheden; wet- en regelgeving; en ketensamenwerking. Als u meer wilt weten over hoe dit verder in zijn werk gaat kunt u de praktijk gids door Mt Integraal lezen. Deze is te vinden op onze bronnen pagina. (Bronnen) fotoooo <br>(Mt Integraal, 2020) 
+
+
+                        <a id="kopje2"></a>
+                        <h2>Militaire wereld</h2><h2></h2>
+                          
+
+                          <p>
+
+                          </p>  Toegang tot de meest recente technologie is essentieel in de militaire en defensie-industrie. Het merendeel van de huidige geavanceerde technologie word uitgevoerd op computers en ingebedde systemen om de unieke vereisten van het leger te ondersteunen. De algemene ingebedde systemen die in consumenten toepassingen worden gebruikt, zijn niet hetzelfde als de ingebedde systemen die in militaire toepassingen worden gebruikt. In het leger gebruikte systemen moeten extreem veilig, betrouwbaar en krachtig zijn.  <Br><br> Extra beveiligd <br>
+                            In de militaire ingebedde systemen en serverarchitectuur van nu zijn netwerken een groot onderdeel. Voor militaire toepassingen worden andere serverarchitecturen gebruikt dan voor consumenten toepassing. Dit is omdat militaire ingebedde systemen een hoger computergebruik hebben en meer invoer- en uitvoeropties gebruiken. 
+
+Militair gebruik van ingebedde- en reken systemen is heel anders dan voor consumenten. Militaire systemen moeten efficiënter, betrouwbaarder, veiliger en robuuster zijn dan consumenten systemen.  Ze zijn verplicht om aan het allerhoogste beveiligingsniveau te voldoen zodat het lastiger is om gegevens te onderscheppen of iets genaamd 'reverse engineering' tegen te houden dit houd in dat je vanuit het product probeert af te leiden hoe iets werkt en daarmee dit voor je zelf gebruiken, ze gaan voor een steeds hoger beveiligingsniveau om toenemend terrorisme of hacken te voorkomen.  Om te zorgen dat dit allemaal goed gaat word gebruik gemaakt van betrouwbare componenten van betrouwbare fabrikanten. 
+
+Regeringen geven daarom ook een aanzienlijk deel van hun jaarlijks budget aan militaire ingebedde systemen om te zorgen voor nationale veiligheid. 
+
+ <br> <br>
+ Diverse systemen <br> <br> 
+ Ingebedde systemen in militaire toepassingen worden gebruikt op vele plekken, hieronder valt land-, water-, lucht- en ruimtesystemen. Van al deze plekken heeft het landsysteem de meeste militaire ingebedde systemen. Hieronder vallen de volgende systemen:
+ <br> -Communicatie<br> - Bewaking <br> -Commando- en controlesystemen <br> -Systemen voor gegevensopslag en -verwerving <br> -Inlichtingen <br> -Satelietsystemen <br> -Raketsystemen <br> Avionica (Luchtvaart) en munitiesystemen<br> Voor verdere informatie kunt u het volgende artikel lezen. [LINK] <br>
+
+                        </p>
+                        <a id="kopje3"></a>
+                        <h2>Politie</h2>
+                        <p>
+                            De Politie maakt veer gebruik van ingebedde systemen denk bijvoorbeeld aan beveiligingscamera's en mobiele apparatuur. <br>  <br>
+
+ 
+
+Sinds eind 2019 hebben alle agenten in New York City een zo genoemde "bodycam" ten alle tijden bij zich. Dit is eigenlijk gewoon een camera die alles opneemt wat de agent ziet of doet. Sinds de introductie van dit zijn er agenten ontslagen in verschillende steden in Amerika nadat corruptie tot het licht was gekomen door deze bodycams. Ook is de hoeveelheid klachten vanwege politie wangedrag met bijna 45 procent verminderd. 
+
+(Cawley, 2022) 
+
+ </p>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <div data-include="footer"></div>
+    </body>
+    <!-- JQuary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Framework -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Include Date Include -->
+    <script src="../js/include.js"></script>
+    <!-- Font Awesome Icons -->
+    <script
+        src="https://kit.fontawesome.com/3f96ab750b.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Form Validation -->
+    <script src="../js/validate.js"></script>
+    <!-- Back to Top Button -->
+    <script src="../js/backtotop.js"></script>
+    <!-- Language Switcher -->
+    <script src="../js/language.js"></script>
+</html>

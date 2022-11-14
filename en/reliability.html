@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+
+        <title>Embedded Systems</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div id="overlay"></div>
+
+        <div data-include="header"></div>
+        <button
+            type="button"
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0 bg-dark"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language"
+            href="#"
+            target="_self"
+        ></a>
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language-2"
+            href="#"
+            target="_self"
+        ></a>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="px-4 pt-5 mt-5 text-center text-light border-bottom"
+                    >
+                        <h1 class="display-4 fw-bold">
+                            Reliability
+                        </h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">
+                                The reliability of embedded systems is difficult to ensure. As our technologies become smaller and smaller, the probability of failure is much higher. This can lead to short circuits, for example, with catastrophic outcomes. So what are the consequences of such an unexpected system failure? Is that jamming your laptop or a plane crashing. So reliability can be defined by this, it is the probability that a system will work completely as it should over a period of time while faults are present. So the systems in an airplane or in the military should be more reliable than, say, your laptop. If a defense system is not reliable enough, terrorists could easily get in or our country could be hacked. This is much more important than your laptop having a malfunction that prevents you from preparing your class.  
+                             </p>
+                            <div
+                                class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    Previous Page
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    Next Page
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 mb-5 text-center text-light border-bottom">
+                        <nav class="nav justify-content-center">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        aria-current="page"
+                                        href="#kopje1"
+                                        > Gevaren
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje2"
+                                        > Verschillende functies </a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje3"
+                                        > Ontwikkeling</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#kopje4"
+                                        > Toekomst</a
+    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row text-light">
+                    <div class="col-md-10">
+                        <a id="kopje1"></a>
+                        <h2>Dangers</h2>
+                        <p>The following potentially dangerous and important failures of embedded systems are possible if the reliability is not good enough. A cell phone that doesn't work when its owner needs urgent medical attention. Or a central heating boiler that overheats and ends up causing a child to suffer burns. Or a thermostat that forgets to turn on the heating, causing the pipes to freeze and burst. Or a microwave oven that turns on while the door is still open. Today, there are many hardware locks to prevent these dangers. But software plays a bigger role here to mitigate critical failures. Because a lot of embedded systems affect the environment, care must be taken to ensure that they are safe and reliable. Safety in embedded systems is ensured by reducing the frequency of accidents. This is done by ensuring various industry-specific standards developed specifically to ensure safety. One example is IEC 61508. 
+                        </p>
+                        <a id="kopje2"></a>
+                        <h2>Reliability in different factors</h2><h2></h2>
+                          
+
+                          <p>
+
+                          </p>  Reliability in embedded systems has been the subject of research for many years. Systems that really need high reliability use a redundant system, such as an aircraft with multiple engines. But everyday systems do not have the budget to enable this hardware redundancy. A much bigger problem; reliable software. Especially now when a product needs to be developed as quickly as possible the budget gets smaller and smaller. Security is also an important issue, but unfortunately there is less focus on security in embedded systems than in enterprise systems. Embedded systems obviously do not have as many security problems as enterprise systems, but the potential for significant consequences is there. For example, if a malicious person gains control of embedded systems that can dump hazardous materials into the environment. Or that manage power distribution, traffic control or other important infrastructure.  
+                           <Br>
+
+                        </p>
+                        <a id="kopje3"></a>
+                        <h2>Development</h2>
+                        <p>
+                            Embedded systems used to be simple, safe, secure and reliable; today they are becoming much more complex and also critical, which was not the case in the past. Unfortunately, techniques have not really changed for new critical applications and therefore less consideration is given to the need to pay attention to reliability, safety and security. Clarifying and improving developers' knowledge in these areas will help make them better. But even then, challenges remain. One of these challenges has to do with the role of domain experts in the design of embedded systems. </p>
+                        <a id="kopje4"></a>
+                        <h2>Future</h2>
+                        <p> Generally, development teams for embedded systems are small and they consist of mostly domain experts and few if any computer experts.  Because domain knowledge is very important for success of the embedded systems. There is a disadvantage here, small teams and/or companies that hire mostly domain experts as staff often do not have access to computing technology or reliability expertise. So even though we can solve all the problems there is still the problem, how do we transfer this knowledge to engineers whose education has nothing to do with computer science. So not only do we have to solve the problems but also spread this knowledge. 
+ s                       </div>
+                </div>
+            </div>
+        </main>
+        <div data-include="footer"></div>
+    </body>
+    <!-- JQuary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Framework -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Include Date Include -->
+    <script src="../js/include.js"></script>
+    <!-- Font Awesome Icons -->
+    <script
+        src="https://kit.fontawesome.com/3f96ab750b.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Form Validation -->
+    <script src="../js/validate.js"></script>
+    <!-- Back to Top Button -->
+    <script src="../js/backtotop.js"></script>
+    <!-- Language Switcher -->
+    <script src="../js/language.js"></script>
+</html>

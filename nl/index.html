@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="h-100" lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <title>Embedded Systems</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <button
+            type="button"
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0 bg-dark"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language"
+            href="#"
+            target="_self"
+        ></a>
+        <a
+            class="btn btn-outline-light btn-floating btn-lg p-0 m-0"
+            id="btn-language-2"
+            href="#"
+            target="_self"
+        ></a>
+
+        <div id="overlay"></div>
+        <div data-include="header"></div>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="px-4 pt-5 my-5 text-center text-light">
+                        <h1 class="display-4 fw-bold">Embedded Systemen</h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">
+                                Een ingebed systeem is een stuk hardware met
+                                software geïnstalleerd dat verschillende
+                                doeleinden kan hebben. Een ingebed systeem word
+                                vaak gebruikt als een controller van sommige
+                                functies in een groot systeem, een voorbeeld
+                                hiervan is bijvoorbeeld onze infrastructuur.
+                            </p>
+                            <div
+                                class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                                >
+                                    Ga naar pagina 1
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-secondary btn-lg px-4"
+                                >
+                                    Bekijk de bronnen
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.youtube.com/embed/Qpc1M-BntaM"
+                                title="What Is an Embedded System?"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="px-4 pt-5 my-5 text-light">
+                        <h2 class="pb-1 border-bottom text-light">
+                            Wil je meer weten, neem contact met ons op!
+                        </h2>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <div
+                                    class="callout callout-success callout-hidden"
+                                    id="msg-success"
+                                >
+                                    <span class="text-dark"
+                                        ><strong>Verzonden!</strong> Je vraag is
+                                        verzonden en zal binnenkort beantwoord
+                                        worden.</span
+                                    >
+                                </div>
+                                <div
+                                    class="callout callout-danger callout-hidden"
+                                    id="msg-error"
+                                >
+                                    <span class="text-dark"
+                                        ><strong>Error!</strong> Er was een
+                                        probleem en je vraag kon niet worden
+                                        verzonden.</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label
+                                    for="firstname-validation"
+                                    class="form-label"
+                                    >Je Naam</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="firstname-validation"
+                                    placeholder="Je Naam"
+                                    required
+                                />
+                                <div class="valid-feedback">
+                                    Ziet er goed uit!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft uw voornaam in.
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label
+                                    for="lastname-validation"
+                                    class="form-label"
+                                    >Je Achternaam</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="lastname-validation"
+                                    placeholder="Je Achternaam"
+                                    required
+                                />
+                                <div class="valid-feedback">
+                                    Ziet er goed uit!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft uw achternaam in.
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <label
+                                    for="emailadress-validation"
+                                    class="form-label"
+                                    >Je E-mailadres</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="emailadress-validation"
+                                    placeholder="Je E-mailadres"
+                                    required
+                                />
+                                <div class="valid-feedback">
+                                    Ziet er goed uit!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft een geldig e-mailadres in.
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="subject-select" class="form-label"
+                                    >Onderwerp</label
+                                >
+                                <select
+                                    class="form-select"
+                                    id="subject-select"
+                                    place
+                                    required
+                                >
+                                    <option value="" disabled selected>
+                                        Kies een onderwerp
+                                    </option>
+                                    <option value="Hoofdstuk 1">
+                                        1. Geschiedenis en Toekomst
+                                    </option>
+                                    <option value="Hoofdstuk 2">
+                                        2. Eigenschappen en Werking
+                                    </option>
+                                    <option value="Hoofdstuk 3">
+                                        3. Het Dagelijks Gebruik
+                                    </option>
+                                    <option value="Hoofdstuk 4">
+                                        4. Embedded systemen op grote schaal
+                                    </option>
+                                    <option value="Hoofdstuk 5">
+                                        5. Betrouwbaarheid van Embedded Systemen
+                                    </option>
+                                    <option value="Overige">Overige</option>
+                                </select>
+                            </div>
+                            <div class="col-md-10">
+                                <label
+                                    for="question-validation"
+                                    class="form-label"
+                                    >Je Vraag</label
+                                >
+
+                                <textarea
+                                    class="form-control"
+                                    id="question-validation"
+                                    rows="3"
+                                    required
+                                ></textarea>
+
+                                <div class="valid-feedback">
+                                    Ziet er goed uit!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Voer alstublieft een vraag in.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button
+                                    onclick="formSent()"
+                                    class="btn btn-primary btn-lg px-4"
+                                >
+                                    Verstuur
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row px-4 py-5" id="custom-cards">
+                    <h2 class="pb-1 border-bottom text-light">
+                        Deze website is gemaakt met behulp van
+                    </h2>
+
+                    <div
+                        class="row row-cols-1 row-cols-lg-3 align-items-stretch py-2 pt-5"
+                    >
+                        <div
+                            class="col p-2"
+                            style="aspect-ratio: 1"
+                            id="bootstrap-overlay"
+                        >
+                            <div
+                                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                id="bootstrap"
+                                style="
+                                    background-image: url('../Images/bootstrapbanner.png');
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                "
+                            >
+                                <div
+                                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                                >
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img
+                                                src="https://github.com/twbs.png"
+                                                alt="Bootstrap"
+                                                width="32"
+                                                height="32"
+                                                class="rounded-circle"
+                                            />
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <h5 class="text-right m-0">
+                                                Bootstrap Framework
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-2" style="aspect-ratio: 1">
+                            <div
+                                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                id="vscode"
+                                style="
+                                    background-image: url('../Images/vscode-alt.png');
+                                    background-size: 60%;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                "
+                            >
+                                <div
+                                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                                >
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img
+                                                src="../Images/vscode-alt.png"
+                                                alt="Vs Code"
+                                                width="32"
+                                                height="32"
+                                            />
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <h5 class="text-right m-0">
+                                                Visual Studio Code
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row row-cols-1 row-cols-lg-3 align-items-stretch py-2 justify-content-end"
+                    >
+                        <div class="col p-2" style="aspect-ratio: 1">
+                            <div
+                                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                id="sass"
+                                style="
+                                    background-image: url('../Images/sass.png');
+                                    background-size: 60%;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                "
+                            >
+                                <div
+                                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                                >
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img
+                                                src="../Images/sass.png"
+                                                alt="Sass"
+                                                width="32"
+                                                height="32"
+                                            />
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <h5 class="text-right m-0">
+                                                Dart Sass
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col p-2" style="aspect-ratio: 1">
+                            <div
+                                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                id="html5"
+                                style="
+                                    background-image: url('../Images/html5.png');
+                                    background-size: 60%;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                "
+                            >
+                                <div
+                                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                                >
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto">
+                                            <img
+                                                src="../Images/html5.png"
+                                                alt="Bootstrap"
+                                                width="32"
+                                                height="32"
+                                                class="rounded-circle border border-white"
+                                                style="padding: 4px"
+                                            />
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <h5 class="text-right m-0">
+                                                HTML 5
+                                            </h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div data-include="footer"></div>
+    </body>
+    <!-- JQuary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Framework -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Include Date Include -->
+    <script src="../js/include.js"></script>
+    <!-- Font Awesome Icons -->
+    <script
+        src="https://kit.fontawesome.com/3f96ab750b.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- Form Validation -->
+    <script src="../js/validate.js"></script>
+    <!-- Back to Top Button -->
+    <script src="../js/backtotop.js"></script>
+    <!-- Language Switcher -->
+    <script src="../js/language.js"></script>
+</html>

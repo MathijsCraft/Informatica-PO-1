@@ -1,0 +1,150 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap/scss/functions";
+
+// 2. Variable overrides
+$body-bg: #333;
+$body-color: #111;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../bootstrap/scss/utilities";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/containers";
+@import "../bootstrap/scss/grid";
+// @import "../bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// @import "../bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    // background: linear-gradient(45deg, $blue-900, $blue-800) no-repeat center center fixed;
+    background: url(../Images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $black;
+    opacity: 0.75;
+    z-index: -1;
+    cursor: pointer;
+  }
+
+// Navbar
+nav .container {border-bottom: .5px solid $gray-200;}
+.navbar-toggler, .navbar-toggler:focus {border: none !important;}
+.nav-link {color: white !important;}
+.nav-link.active {color: white; font-weight: bolder;}
+
+// Footer
+footer .dropdown-toggle:after {border-top: 0em; border-bottom: 0.3em solid;}
+
+// Other
+img {max-width:100%; max-height:100%;}
+
+// Cards
+#vscode {background-color: $blue-400 !important;}
+#sass {background-color: $pink-300 !important;}
+#html5 {background-color: $orange-400 !important;}
+
+#bootstrap:hover {
+    background-color: $purple-300 !important;
+    z-index: 1000;
+    background-blend-mode: multiply;
+}
+#vscode:hover {background-color: $blue-500 !important;}
+#sass:hover {background-color: $pink-400 !important;}
+#html5:hover {background-color: $orange-500 !important;}
+
+// Callouts
+.callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--callout-bg);
+    border-left: 0.25rem solid var(--callout-border);
+}
+
+.callout-standard {
+    --callout-bg: #f8f9fa;
+    --callout-border: #dee2e6;
+}
+
+.callout-info {
+    --callout-bg: #cfe2ff;
+    --callout-border: #6ea8fe;
+}
+
+.callout-success {
+    --callout-bg: #d1e7dd;
+    --callout-border: #75b798;
+}
+
+.callout-danger {
+    --callout-bg: #f8d7da;
+    --callout-border: #ea868f;
+}
+
+.callout-hidden {
+    display: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    display: none;
+    width: 2em;
+    height: 2em;
+
+    z-index: 99999;
+  }
+
+  #btn-language {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 2em;
+    height: 2em;
+
+    z-index: 99999;
+  }
+
+  #btn-language-2 {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    width: 2em;
+    height: 2em;
+
+    z-index: 99999;
+  }
