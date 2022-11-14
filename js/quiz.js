@@ -65,11 +65,14 @@ const correctAnswers = `<div class="callout callout-error callout-hidden" id="ms
   
           // color the answers green
           answerContainers[questionNumber].style.color = 'lightgreen';
-          // currentQuestion.insertAdjacentHTML('beforebegin', correctAnswers);
 
+          // Add a div below the question with information about the correct answer
+          // currentQuestion.insertAdjacentHTML('beforebegin', correctAnswers);
           const question = document.getElementById("question");
           console.log(question.length);
-          question.insertAdjacentHTML('beforebegin', correctAnswers);
+          question.appendChild(correctAnswers);
+
+
         }
         // if answer is wrong or blank
         else{
