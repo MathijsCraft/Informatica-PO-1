@@ -69,8 +69,8 @@ const correctAnswers = `<div class="callout callout-error callout-hidden" id="ms
           // Add a div below the question with information about the correct answer
           // currentQuestion.insertAdjacentHTML('beforebegin', correctAnswers);
           const question = document.getElementById("question");
-          console.log(question.length);
-          question.appendChild(correctAnswers);
+          console.log("Appending correctAnswers");
+          answerContainers[questionNumber].appendChild(correctAnswers);
 
 
         }
